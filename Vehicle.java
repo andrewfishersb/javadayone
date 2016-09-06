@@ -10,7 +10,12 @@
     }
 
     public boolean worthBuying(int maxPrice) {
-      return (mPrice < maxPrice);
+      return (mCost < maxPrice);
     }
-
+    public void printVehicle(){
+      System.out.println( "----------------------" );
+      System.out.println( mYear );
+      System.out.println( mBrand );
+      System.out.println( mCost );
+    }
   }
