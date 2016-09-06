@@ -20,5 +20,18 @@ public static void main(String[] args){
       hours += nums[i];
     }
     System.out.println("You worked " +hours +" hours");
+    codeResponse(hours);
+  }
+
+  public static void codeResponse(int total) {
+    if (total <= 10) {
+      System.out.println("Think about your future!");
+    } else if (total > 10 && total <= 20) {
+      System.out.println("Pretty good, but I've seen better.");
+    } else if (total > 20 && total <= 30) {
+      System.out.println("You are on the track to master Java.");
+    } else {
+      System.out.println("Think about your future!");
+    }
   }
 }
